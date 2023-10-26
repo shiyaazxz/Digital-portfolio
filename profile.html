@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+            <title>Your Name - portfolio</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #fefefe
+                }
+
+                header {
+                    background-color: #333;
+                    color: #fff;
+                    text-align: center;
+                    padding: 2rem 0;
+                    position: relative; 
+                }
+
+                .header-content h1 {
+                    font-size: 2.5rem;
+                }
+
+                .profile-picture {
+                width: 100px; 
+                height: 100px;
+                border-radius: 75%; 
+                object-fit: cover; 
+                position: absolute; 
+                top: 75px; 
+                right: 75px; 
+                }
+
+            nav {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+            }
+
+            nav u1 {
+                list-style-type: none;
+                padding: 0px;
+            }
+
+            nav u1 li{
+                display: inline;
+                margin: 0 20px;
+            }
+
+            nav u1 li a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .section-content {
+                background-color: #fff;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .download-button {
+                background-color: #333;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+
+            .download-button:hover {
+                background-color: blueviolet;
+            }
+
+            footer {
+                text-align: center;
+                padding: 1rem 0;
+                background-color: #333;
+                color: #fff;
+            }
+                
+            u1 {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="anu.jfif" alt="Your profile piucture" class="profile-picture">
+            <h1>Anushiya S</h1>
+            <p>College Student</p>
+        </div>
+    </header>
+
+    <nav>
+        <u1>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </u1>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hello Everyone! This is Anushiya and I am a student of S.T Hindu College.</p>
+        </div>
+    </section>
+
+    
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <u1>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+            </u1>
+        </div>
+    </section>
+    
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+               <p>S.T Hindu College - B.sc Computer Science</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact</h2>
+            <u1>
+                <li>Email Id:anushiya3939@gmail.com</li>
+                <li>Phone No:8883133119</li>
+                <li>Insta Id:___.shiyaazxz.___</li>
+            </u1>
+        </div>
+    </section>
+
+        <section id="resume">
+        <center>
+            <div class="section-content">
+                <h2>Resume</h2>
+
+                <a href="Anu cv" class="download-button">Download CV</a>
+            </div>
+        </center>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Anushiya</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[herf^="#"]').forEach(anchor => {
+            anchor.addEventListner('click',function(e){
+                e.preventDefault();
+                const targetId = this.getAttribute('herf').substring(1);
+                const targetElement = document.getElementBy(targetId);
+
+
+             });
+         })
+    </script>
+    </body>
+</html>
